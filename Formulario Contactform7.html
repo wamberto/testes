@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-sm-4 mb-3">
+        <label for="nome" class="form-label">Nome: (Opcional)</label>
+        [text nome placeholder=Nome name class:form-control id:nome]
+    </div>
+
+    <div class="col-sm-4 mb-3">
+        <label for="email" class="form-label">Email: (Obrigatório)</label>
+        [text email placeholder=email class:form-control id:email placeholder "seuemail@seuemail"]
+    </div>
+
+    <div class="col-sm-4 mb-3">
+        <label for="telefone" class="form-label">Telefone WhatsApp: (Obrigatório) </label>
+             [tel telefone class:form-control class:mask-celular placeholder "(xx) x xxxx-xxxx"]
+    </div>
+
+    <div class="col-12 mb-3">
+        <label for="categorias">Categorias:<i> Deixe sem marcar para receber conteúdo de todas as categorias</i></label>
+        <div class="form-check form-check-inline">
+            [checkbox categorias id:categorias use_label_element "Cidades" "Policial" "Esporte"
+            "Paraíba" "Brasil" "Política" "Geral"]
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <label for="newsletter" class="form-label">Newsletter:</label>
+        <div class="form-check">
+            [checkbox newsletter use_label_element "Desejo receber o conteúdo também por email"]
+        </div>
+    </div>
+
+    <div class="form-group">
+        [submit class:btn class:btn-primary "Enviar"]
+    </div>
+</div>
