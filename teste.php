@@ -205,8 +205,6 @@ if ($post->post_parent && $post->post_parent != 248042) {
             </div>
         </div>
     <?php endwhile; ?>
-
-    
 <?php else : ?>
     <div class="jumbotron jumbotron-fluid p-3">
         <div class="container text-center">
